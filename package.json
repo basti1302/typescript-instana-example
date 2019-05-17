@@ -1,0 +1,25 @@
+{
+  "name": "instana-typescript-example",
+  "version": "1.0.0",
+  "description": "An example project for using Instana in a TypeScript project",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "npm run build-ts && npm run tslint",
+    "serve": "node dist/main.js",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {
+    "@instana/collector": "^1.67.2",
+    "express": "^4.16.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^9.4.6",
+    "ts-node": "^5.0.0",
+    "tslint": "^5.9.1",
+    "typescript": "^3.4.5"
+  }
+}
